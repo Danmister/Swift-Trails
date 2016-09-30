@@ -40,21 +40,43 @@
                                     <action selector="secondButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L20-9B-baQ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9B2-yz-aJQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SeB-CC-51k"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dKf-ZI-DKb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ryb-ms-RGM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8Tv-pW-zeg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1No-bY-L5E"/>
                             <constraint firstItem="AdR-Ge-EAG" firstAttribute="top" secondItem="8Tv-pW-zeg" secondAttribute="bottom" constant="46" id="1RU-Q5-QLs"/>
+                            <constraint firstItem="9B2-yz-aJQ" firstAttribute="top" secondItem="yZ7-IQ-Xfr" secondAttribute="bottom" constant="21.5" id="IPe-kX-dBh"/>
                             <constraint firstItem="yZ7-IQ-Xfr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L1f-GV-11Z"/>
                             <constraint firstItem="A6L-Vf-9hF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ta2-YT-cca"/>
+                            <constraint firstItem="9B2-yz-aJQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZQE-FC-AYZ"/>
                             <constraint firstItem="8Tv-pW-zeg" firstAttribute="top" secondItem="A6L-Vf-9hF" secondAttribute="bottom" constant="66.5" id="ccZ-2C-C1K"/>
+                            <constraint firstItem="dKf-ZI-DKb" firstAttribute="top" secondItem="9B2-yz-aJQ" secondAttribute="bottom" constant="38" id="d1c-Xo-G6y"/>
                             <constraint firstItem="AdR-Ge-EAG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="exJ-NZ-wWk"/>
                             <constraint firstItem="A6L-Vf-9hF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="lXU-7Q-9t5"/>
+                            <constraint firstItem="dKf-ZI-DKb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mn8-7Y-YYR"/>
                             <constraint firstItem="yZ7-IQ-Xfr" firstAttribute="top" secondItem="AdR-Ge-EAG" secondAttribute="bottom" constant="27" id="s1w-f4-Tgg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="secondLabel" destination="AdR-Ge-EAG" id="gbA-2Q-7rq"/>
+                        <outlet property="text1" destination="9B2-yz-aJQ" id="11f-bd-oGo"/>
+                        <outlet property="text2" destination="dKf-ZI-DKb" id="9vO-s5-AkC"/>
                         <outlet property="theLabel" destination="A6L-Vf-9hF" id="pkp-l0-GPY"/>
                     </connections>
                 </viewController>
